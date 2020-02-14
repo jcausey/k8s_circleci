@@ -1,4 +1,6 @@
-
+  version: 2.1
+  orbs:
+    kubernetes: circleci/kubernetes@0.11.0
   jobs:
     create-update:
       docker:
@@ -12,6 +14,6 @@
             resource-name: deployment/nginx-deployment
             show-kubectl-command: true
   orbs:
-    kube-orb: circleci/kubernetes@x.y.z
+    kube-orb: circleci/kubernetes@0.11.0
   version: 2.1
 
